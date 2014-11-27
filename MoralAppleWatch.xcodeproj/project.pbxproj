@@ -13,6 +13,14 @@
 		39176C621A20ED3300C8011D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39176C611A20ED3300C8011D /* Images.xcassets */; };
 		39176C651A20ED3300C8011D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39176C631A20ED3300C8011D /* LaunchScreen.xib */; };
 		39176C711A20ED3300C8011D /* MoralAppleWatchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39176C701A20ED3300C8011D /* MoralAppleWatchTests.swift */; };
+		39176C811A20ED8800C8011D /* WatchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39176C801A20ED8800C8011D /* WatchKit.framework */; };
+		39176C861A20ED8800C8011D /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39176C851A20ED8800C8011D /* InterfaceController.swift */; };
+		39176C881A20ED8800C8011D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39176C871A20ED8800C8011D /* Images.xcassets */; };
+		39176C8C1A20ED8800C8011D /* MoralAppleWatch Watch App.app in Resources */ = {isa = PBXBuildFile; fileRef = 39176C8B1A20ED8800C8011D /* MoralAppleWatch Watch App.app */; };
+		39176C931A20ED8800C8011D /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39176C921A20ED8800C8011D /* Interface.storyboard */; };
+		39176C951A20ED8800C8011D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39176C941A20ED8800C8011D /* Images.xcassets */; };
+		39176C981A20ED8800C8011D /* MoralAppleWatch WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 39176C7E1A20ED8800C8011D /* MoralAppleWatch WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		393427C11A277973000768E9 /* MoodDetailsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393427C01A277973000768E9 /* MoodDetailsController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,7 +31,35 @@
 			remoteGlobalIDString = 39176C541A20ED3300C8011D;
 			remoteInfo = MoralAppleWatch;
 		};
+		39176C8D1A20ED8800C8011D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 39176C4D1A20ED3300C8011D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 39176C8A1A20ED8800C8011D;
+			remoteInfo = "MoralAppleWatch Watch App";
+		};
+		39176C961A20ED8800C8011D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 39176C4D1A20ED3300C8011D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 39176C7D1A20ED8800C8011D;
+			remoteInfo = "MoralAppleWatch WatchKit Extension";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		39176C9F1A20ED8900C8011D /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				39176C981A20ED8800C8011D /* MoralAppleWatch WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		39176C551A20ED3300C8011D /* MoralAppleWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoralAppleWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -36,6 +72,16 @@
 		39176C6A1A20ED3300C8011D /* MoralAppleWatchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoralAppleWatchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		39176C6F1A20ED3300C8011D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		39176C701A20ED3300C8011D /* MoralAppleWatchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoralAppleWatchTests.swift; sourceTree = "<group>"; };
+		39176C7E1A20ED8800C8011D /* MoralAppleWatch WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "MoralAppleWatch WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		39176C801A20ED8800C8011D /* WatchKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WatchKit.framework; path = System/Library/Frameworks/WatchKit.framework; sourceTree = SDKROOT; };
+		39176C841A20ED8800C8011D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		39176C851A20ED8800C8011D /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		39176C871A20ED8800C8011D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		39176C8B1A20ED8800C8011D /* MoralAppleWatch Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MoralAppleWatch Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		39176C911A20ED8800C8011D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		39176C921A20ED8800C8011D /* Interface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Interface.storyboard; sourceTree = "<group>"; };
+		39176C941A20ED8800C8011D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		393427C01A277973000768E9 /* MoodDetailsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoodDetailsController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +99,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		39176C7B1A20ED8800C8011D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39176C811A20ED8800C8011D /* WatchKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -61,6 +115,9 @@
 			children = (
 				39176C571A20ED3300C8011D /* MoralAppleWatch */,
 				39176C6D1A20ED3300C8011D /* MoralAppleWatchTests */,
+				39176C821A20ED8800C8011D /* MoralAppleWatch WatchKit Extension */,
+				39176C8F1A20ED8800C8011D /* MoralAppleWatch Watch App */,
+				39176C7F1A20ED8800C8011D /* Frameworks */,
 				39176C561A20ED3300C8011D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -70,6 +127,8 @@
 			children = (
 				39176C551A20ED3300C8011D /* MoralAppleWatch.app */,
 				39176C6A1A20ED3300C8011D /* MoralAppleWatchTests.xctest */,
+				39176C7E1A20ED8800C8011D /* MoralAppleWatch WatchKit Extension.appex */,
+				39176C8B1A20ED8800C8011D /* MoralAppleWatch Watch App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -112,6 +171,51 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		39176C7F1A20ED8800C8011D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				39176C801A20ED8800C8011D /* WatchKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		39176C821A20ED8800C8011D /* MoralAppleWatch WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				39176C851A20ED8800C8011D /* InterfaceController.swift */,
+				393427C01A277973000768E9 /* MoodDetailsController.swift */,
+				39176C871A20ED8800C8011D /* Images.xcassets */,
+				39176C831A20ED8800C8011D /* Supporting Files */,
+			);
+			path = "MoralAppleWatch WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		39176C831A20ED8800C8011D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				39176C841A20ED8800C8011D /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		39176C8F1A20ED8800C8011D /* MoralAppleWatch Watch App */ = {
+			isa = PBXGroup;
+			children = (
+				39176C921A20ED8800C8011D /* Interface.storyboard */,
+				39176C941A20ED8800C8011D /* Images.xcassets */,
+				39176C901A20ED8800C8011D /* Supporting Files */,
+			);
+			path = "MoralAppleWatch Watch App";
+			sourceTree = "<group>";
+		};
+		39176C901A20ED8800C8011D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				39176C911A20ED8800C8011D /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -122,10 +226,12 @@
 				39176C511A20ED3300C8011D /* Sources */,
 				39176C521A20ED3300C8011D /* Frameworks */,
 				39176C531A20ED3300C8011D /* Resources */,
+				39176C9F1A20ED8900C8011D /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				39176C971A20ED8800C8011D /* PBXTargetDependency */,
 			);
 			name = MoralAppleWatch;
 			productName = MoralAppleWatch;
@@ -150,6 +256,39 @@
 			productReference = 39176C6A1A20ED3300C8011D /* MoralAppleWatchTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		39176C7D1A20ED8800C8011D /* MoralAppleWatch WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 39176C9C1A20ED8900C8011D /* Build configuration list for PBXNativeTarget "MoralAppleWatch WatchKit Extension" */;
+			buildPhases = (
+				39176C7A1A20ED8800C8011D /* Sources */,
+				39176C7B1A20ED8800C8011D /* Frameworks */,
+				39176C7C1A20ED8800C8011D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				39176C8E1A20ED8800C8011D /* PBXTargetDependency */,
+			);
+			name = "MoralAppleWatch WatchKit Extension";
+			productName = "MoralAppleWatch WatchKit Extension";
+			productReference = 39176C7E1A20ED8800C8011D /* MoralAppleWatch WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit-extension";
+		};
+		39176C8A1A20ED8800C8011D /* MoralAppleWatch Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 39176C991A20ED8900C8011D /* Build configuration list for PBXNativeTarget "MoralAppleWatch Watch App" */;
+			buildPhases = (
+				39176C891A20ED8800C8011D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MoralAppleWatch Watch App";
+			productName = "MoralAppleWatch Watch App";
+			productReference = 39176C8B1A20ED8800C8011D /* MoralAppleWatch Watch App.app */;
+			productType = "com.apple.product-type.application.watchapp";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -165,6 +304,12 @@
 					39176C691A20ED3300C8011D = {
 						CreatedOnToolsVersion = 6.2;
 						TestTargetID = 39176C541A20ED3300C8011D;
+					};
+					39176C7D1A20ED8800C8011D = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					39176C8A1A20ED8800C8011D = {
+						CreatedOnToolsVersion = 6.2;
 					};
 				};
 			};
@@ -183,6 +328,8 @@
 			targets = (
 				39176C541A20ED3300C8011D /* MoralAppleWatch */,
 				39176C691A20ED3300C8011D /* MoralAppleWatchTests */,
+				39176C7D1A20ED8800C8011D /* MoralAppleWatch WatchKit Extension */,
+				39176C8A1A20ED8800C8011D /* MoralAppleWatch Watch App */,
 			);
 		};
 /* End PBXProject section */
@@ -202,6 +349,24 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		39176C7C1A20ED8800C8011D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39176C8C1A20ED8800C8011D /* MoralAppleWatch Watch App.app in Resources */,
+				39176C881A20ED8800C8011D /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		39176C891A20ED8800C8011D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39176C931A20ED8800C8011D /* Interface.storyboard in Resources */,
+				39176C951A20ED8800C8011D /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,6 +390,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		39176C7A1A20ED8800C8011D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39176C861A20ED8800C8011D /* InterfaceController.swift in Sources */,
+				393427C11A277973000768E9 /* MoodDetailsController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -232,6 +406,16 @@
 			isa = PBXTargetDependency;
 			target = 39176C541A20ED3300C8011D /* MoralAppleWatch */;
 			targetProxy = 39176C6B1A20ED3300C8011D /* PBXContainerItemProxy */;
+		};
+		39176C8E1A20ED8800C8011D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 39176C8A1A20ED8800C8011D /* MoralAppleWatch Watch App */;
+			targetProxy = 39176C8D1A20ED8800C8011D /* PBXContainerItemProxy */;
+		};
+		39176C971A20ED8800C8011D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 39176C7D1A20ED8800C8011D /* MoralAppleWatch WatchKit Extension */;
+			targetProxy = 39176C961A20ED8800C8011D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -338,6 +522,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = MoralAppleWatch/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -348,6 +533,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = MoralAppleWatch/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -388,6 +574,62 @@
 			};
 			name = Release;
 		};
+		39176C9A1A20ED8900C8011D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IBSC_MODULE = MoralAppleWatch_WatchKit_Extension;
+				INFOPLIST_FILE = "MoralAppleWatch Watch App/Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Debug;
+		};
+		39176C9B1A20ED8900C8011D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				IBSC_MODULE = MoralAppleWatch_WatchKit_Extension;
+				INFOPLIST_FILE = "MoralAppleWatch Watch App/Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Release;
+		};
+		39176C9D1A20ED8900C8011D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "MoralAppleWatch WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		39176C9E1A20ED8900C8011D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "MoralAppleWatch WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -407,6 +649,7 @@
 				39176C761A20ED3300C8011D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		39176C771A20ED3300C8011D /* Build configuration list for PBXNativeTarget "MoralAppleWatchTests" */ = {
 			isa = XCConfigurationList;
@@ -415,6 +658,25 @@
 				39176C791A20ED3300C8011D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		39176C991A20ED8900C8011D /* Build configuration list for PBXNativeTarget "MoralAppleWatch Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39176C9A1A20ED8900C8011D /* Debug */,
+				39176C9B1A20ED8900C8011D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		39176C9C1A20ED8900C8011D /* Build configuration list for PBXNativeTarget "MoralAppleWatch WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39176C9D1A20ED8900C8011D /* Debug */,
+				39176C9E1A20ED8900C8011D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

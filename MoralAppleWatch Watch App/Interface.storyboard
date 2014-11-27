@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="6221" systemVersion="14B25" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6213"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3734"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="MoralAppleWatch_Watch_App" customModuleProvider="target">
+                    <items>
+                        <imageView width="110" height="114" alignment="center" image="rage0" id="dep-eg-mUf"/>
+                        <separator alignment="left" id="Iij-EJ-pgd"/>
+                        <label alignment="center" text="Volumen" textAlignment="left" id="r3B-RG-hEb"/>
+                        <slider width="1" alignment="left" maximum="4" steps="4" id="4N9-48-dUX">
+                            <connections>
+                                <action selector="moodSliderChanged:" destination="AgC-eL-Hgc" id="Nx5-ef-1Ro"/>
+                            </connections>
+                        </slider>
+                        <group width="1" alignment="left" hasDetent="YES" id="Q0h-Oa-WN2">
+                            <items>
+                                <label alignment="left" text="menos" id="7no-ax-HQj"/>
+                                <label alignment="right" text="más" id="Huo-lQ-zUQ"/>
+                            </items>
+                        </group>
+                        <switch width="1" alignment="left" value="YES" title="Avisos" id="mMy-CZ-ZjV"/>
+                        <button width="1" alignment="center" verticalAlignment="bottom" title="Llamar a Moral" id="PHn-Ny-VTD">
+                            <connections>
+                                <action selector="recordMood" destination="AgC-eL-Hgc" id="iCm-8e-Iye"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="moodImage" destination="dep-eg-mUf" id="0lD-3T-kq9"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="183" y="294"/>
+        </scene>
+        <!--MoodDetailsController-->
+        <scene sceneID="INp-7A-DyR">
+            <objects>
+                <controller identifier="MoodDetailsController" id="1In-4t-JQh" customClass="MoodDetailsController" customModule="MoralAppleWatch_WatchKit_Extension">
+                    <items>
+                        <group width="1" alignment="left" hasDetent="YES" id="Y4u-RQ-yi0">
+                            <items>
+                                <imageView width="0.5" widthAdjustment="-4" alignment="left" verticalAlignment="center" image="rage1" contentMode="scaleAspectFit" id="bXD-Sp-d4p"/>
+                                <separator alignment="center" id="0uG-Jd-dVI"/>
+                                <label width="0.5" widthAdjustment="-4" alignment="right" text="Label" id="acP-nC-uGn"/>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" layout="vertical" hasDetent="YES" id="y3Z-jd-xA0">
+                            <items>
+                                <label alignment="left" text="The quick brown fox jumps over the lazy dog." numberOfLines="0" id="nI8-zu-qjI"/>
+                                <separator alignment="left" id="iJs-nW-HkT"/>
+                                <label width="1" alignment="left" text="Advice goes here!" minimumScaleFactor="0.90000000000000002" id="MQd-SC-Of4"/>
+                            </items>
+                            <edgeInsets key="margins" left="4" right="4" top="0.0" bottom="0.0"/>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="moodAdviceLabel" destination="MQd-SC-Of4" id="dNr-Mg-nNr"/>
+                        <outlet property="moodDescriptionLabel" destination="nI8-zu-qjI" id="0pb-Tf-y0e"/>
+                        <outlet property="moodImage" destination="bXD-Sp-d4p" id="wtm-JC-wIw"/>
+                        <outlet property="moodNameLabel" destination="acP-nC-uGn" id="G12-Dd-TZG"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="480" y="244"/>
+        </scene>
+    </scenes>
+</document>
