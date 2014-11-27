@@ -44,7 +44,7 @@ class InterfaceController: WKInterfaceController {
     
     @IBAction func recordMood() {
             pushControllerWithName("MoodDetailsController", context: nil)
-        
+
     }
     
     
