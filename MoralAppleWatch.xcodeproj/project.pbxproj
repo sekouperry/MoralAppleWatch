@@ -21,7 +21,6 @@
 		39176C951A20ED8800C8011D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39176C941A20ED8800C8011D /* Images.xcassets */; };
 		39176C981A20ED8800C8011D /* MoralAppleWatch WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 39176C7E1A20ED8800C8011D /* MoralAppleWatch WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		393427C11A277973000768E9 /* MoodDetailsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393427C01A277973000768E9 /* MoodDetailsController.swift */; };
-		398F82C11A27ACC7000A4AD8 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 398F82C01A27ACC7000A4AD8 /* .gitignore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,7 +82,6 @@
 		39176C921A20ED8800C8011D /* Interface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Interface.storyboard; sourceTree = "<group>"; };
 		39176C941A20ED8800C8011D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		393427C01A277973000768E9 /* MoodDetailsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoodDetailsController.swift; sourceTree = "<group>"; };
-		398F82C01A27ACC7000A4AD8 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,7 +113,6 @@
 		39176C4C1A20ED3300C8011D = {
 			isa = PBXGroup;
 			children = (
-				398F82C01A27ACC7000A4AD8 /* .gitignore */,
 				39176C571A20ED3300C8011D /* MoralAppleWatch */,
 				39176C6D1A20ED3300C8011D /* MoralAppleWatchTests */,
 				39176C821A20ED8800C8011D /* MoralAppleWatch WatchKit Extension */,
@@ -342,7 +339,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				398F82C11A27ACC7000A4AD8 /* .gitignore in Resources */,
 				39176C601A20ED3300C8011D /* Main.storyboard in Resources */,
 				39176C651A20ED3300C8011D /* LaunchScreen.xib in Resources */,
 				39176C621A20ED3300C8011D /* Images.xcassets in Resources */,
