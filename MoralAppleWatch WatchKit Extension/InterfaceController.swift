@@ -50,6 +50,7 @@ class InterfaceController: WKInterfaceController {
         updateMoodImage()
     }
     
+    
     /*@IBAction func recordMood() {
         /*pushControllerWithName("MoodDetailsController", context: MoodContextData(moodIndex: currentMood))
         */
