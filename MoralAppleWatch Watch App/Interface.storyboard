@@ -27,7 +27,7 @@
                         <switch width="1" alignment="left" value="YES" title="Avisos" id="mMy-CZ-ZjV"/>
                         <button width="1" alignment="center" verticalAlignment="bottom" title="Llamar a Moral" id="PHn-Ny-VTD">
                             <connections>
-                                <action selector="recordMood" destination="AgC-eL-Hgc" id="iCm-8e-Iye"/>
+                                <segue destination="1In-4t-JQh" kind="push" identifier="RecordMoodSegue" id="4zP-u2-qB5"/>
                             </connections>
                         </button>
                     </items>

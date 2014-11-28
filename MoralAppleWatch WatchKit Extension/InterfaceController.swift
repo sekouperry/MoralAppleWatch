@@ -9,6 +9,14 @@
 import WatchKit
 import Foundation
 
+class MoodContextData {
+
+    let moodIndex : Int
+    
+    init(moodIndex: Int){
+        self.moodIndex = moodIndex
+    }
+}
 
 class InterfaceController: WKInterfaceController {
 
@@ -42,11 +50,22 @@ class InterfaceController: WKInterfaceController {
         updateMoodImage()
     }
     
-    @IBAction func recordMood() {
-            pushControllerWithName("MoodDetailsController", context: nil)
+    /*@IBAction func recordMood() {
+        /*pushControllerWithName("MoodDetailsController", context: MoodContextData(moodIndex: currentMood))
+        */
 
-    }
+    }*/
     
+    
+    override func contextForSegueWithIdentifier(segueIdentifier: String) -> AnyObject? {
+
+        if segueIdentifier == "RecordMoodSegue" {
+            println("Llamo")
+            return MoodContextData(moodIndex: currentMood)
+        }
+        
+        return nil
+    }
     
     func updateMoodImage(){
     
